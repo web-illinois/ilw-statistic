@@ -1,9 +1,9 @@
 {
-    "title": "<%= _.startCase(name.slice(4)) %>",
-    "tag": "<%= name %>",
-    "github": "https://github.com/web-illinois/<%= name %>/",
+    "title": "Statistic",
+    "tag": "ilw-statistic",
+    "github": "https://github.com/web-illinois/ilw-statistic/",
     "type": "web component",
-    "element-name": "<%= name %>",
+    "element-name": "ilw-statistic",
     "description": "Description for builder.",
     "toolkit-version": "",
     "production-version": "",

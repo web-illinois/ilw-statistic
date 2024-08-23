@@ -17,30 +17,32 @@ By default the card is a gray box with blue text. The box will fill the space of
 ### Slots
 | Slot  | Description |
 | ------------- | ------------- |
-| `slot="top"` | Content Cell  |
-| `slot="stat"`  | Content Cell  |
-| `slot="source"`  | Content Cell  |
+| `slot="top"` | A piece of intro text, same style as the stat description text.  |
+| `slot="stat"`  | Centered with larger text than the rest.  |
+| `slot="source"`  | Italicized and slightly smaller text than the top and description text.  |
 
 ## Code Examples
 
 ```html
 <il-statistic size="small" theme="gray">
   <span slot="top">Nation's</span>
-  <em slot="stat">Top Six</em>
-  Overall ranking among undergraduate programs in the U.S.
+  <span slot="stat">Top Six</span> Overall ranking among undergraduate programs in the U.S.
   <span slot="source">U.S. News and World 2022</span>
 </il-statistic>
 ```
 
-## Accessibility Notes and Use
+```html
+<il-statistic size="large" theme="blue">
+  <span slot="stat">#9</span> of students participate in research
+</il-statistic>
+```
 
-Consider accessibility, both for building the component and for its use:
 
-- Is there sufficient color contrast?
-- Can the component be fully understood without colors?
-- Does the component need alt text or ARIA roles?
-- Can the component be navigated with a keyboard? Is the tab order correct?
-- Are focusable elements interactive, and interactive elements focusable?
-- Are form fields, figures, fieldsets and other interactive elements labelled?
+## Accessibility Notes
+- Ensure the slots are in order, top, stat and source.
+- Spans are used to change the styling of each piece while containing the complete statistic in one block level element.
 
 ## External References
+
+https://www.w3schools.com/tags/tag_span.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span

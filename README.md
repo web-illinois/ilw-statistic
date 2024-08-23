@@ -24,17 +24,17 @@ By default the card is a gray box with blue text. The box will fill the space of
 ## Code Examples
 
 ```html
-<il-statistic size="small" theme="gray">
+<ilw-statistic size="small" theme="gray">
   <span slot="top">Nation's</span>
   <span slot="stat">Top Six</span> Overall ranking among undergraduate programs in the U.S.
   <span slot="source">U.S. News and World 2022</span>
-</il-statistic>
+</ilw-statistic>
 ```
 
 ```html
-<il-statistic size="large" theme="blue">
+<ilw-statistic size="large" theme="blue">
   <span slot="stat">#9</span> of students participate in research
-</il-statistic>
+</ilw-statistic>
 ```
 
 

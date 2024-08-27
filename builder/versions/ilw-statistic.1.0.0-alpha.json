@@ -13,10 +13,15 @@
     "notes": "",
     "parent-style": "",
     "samples": [
-        {
+         {
             "name": "default",
-            "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "description": "Full statistic",
+            "text": "<span slot=\"top\">Nation's</span>\n<span slot="\stat\">Top Six</span> Overall ranking among undergraduate programs in the U.S.\n<span slot=\"source\">U.S. News and World 2022</span>"
+        },
+        {
+            "name": "no heading or source",
+            "description": "No heading or source",
+            "text": " <span slot=\"stat\">#9</span> overall ranking among online master's degrees in baking"
         }
     ],
     "attributes-fixed": [],
@@ -28,9 +33,22 @@
             "depreciated": false,
             "values": [
                 "",
+                "gray",
+                "white",
                 "blue",
-                "orange",
-                "white"
+                "blue-gradient",
+            ]
+        },
+        {
+            "name": "size",
+            "description": "proportional sized used",
+            "depreciated": false,
+            "values": [
+                "",
+                "small",
+                "medium",
+                "large",
+                "xlarge"
             ]
         }
     ],

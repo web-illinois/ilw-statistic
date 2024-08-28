@@ -16,7 +16,7 @@
          {
             "name": "default",
             "description": "Full statistic",
-            "text": "<span slot=\"top\">Nation's</span>\n<span slot="\stat\">Top Six</span> Overall ranking among undergraduate programs in the U.S.\n<span slot=\"source\">U.S. News and World 2022</span>"
+            "text": "<span slot=\"top\">Nation's</span>\n<span slot=\"stat\">Top Six</span> Overall ranking among undergraduate programs in the U.S.\n<span slot=\"source\">U.S. News and World 2022</span>"
         },
         {
             "name": "no heading or source",

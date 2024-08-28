@@ -11,7 +11,7 @@ A statistic component is used to display significant data points.
 By default the card is a gray box with blue text. The box will fill the space of the container it is placed inside, but the text will stay centered.
 
 - The top of the statistic can have a heading using `slot="top"`.
-- Text can be resized to `small`, `medium`, `large` and `xlarge` using `size="small"`.
+- Text can be resized to `small`, `medium`, `large` and `x-large` using `size="small"`.
 - Color themes for `gray`, `blue`,`white`, and `blue-gradient`. For example, `theme="blue"`.
 
 ### Slots

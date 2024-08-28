@@ -6,7 +6,7 @@ class Statistic extends LitElement {
 
     static get properties() {
         return {
-            theme: { type: String, attribute: true }
+            theme: { type: String, attribute: true },
             size: { type: String, attribute: true }
         };
     }

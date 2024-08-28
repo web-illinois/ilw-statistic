@@ -10,7 +10,7 @@ export default css`
       font-size: 1.25rem;
       font-weight: 500;
     }
-  @container (min-width: 50rem) {
+ @media only screen and (min-width: 50rem) {
     div {
       font-size: 2rem;
     }

@@ -17,6 +17,7 @@ class Statistic extends LitElement {
     constructor() {
         super();
         this.theme = '';
+        this.size = '';
     }
 
     render() {

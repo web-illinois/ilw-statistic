@@ -4,8 +4,8 @@
     "github": "https://github.com/web-illinois/ilw-statistic/",
     "type": "web component",
     "element-name": "ilw-statistic",
-    "description": "Description for builder.",
+    "description": "Display a statistic nicely.",
     "toolkit-version": "",
     "production-version": "",
-    "development-version": "1.0.0-alpha"
+    "development-version": "1.0-beta"
 }

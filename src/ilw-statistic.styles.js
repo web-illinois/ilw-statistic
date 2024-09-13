@@ -5,14 +5,32 @@ export default css`
       display: block;
       width: 100%;
       container-type: inline-size;
-    }
-    div {
-      font-size: 1.25rem;
-      font-weight: 500;
-    }
- @media only screen and (min-width: 50rem) {
-    div {
-      font-size: 2rem;
-    }
-  }
+      text-align:center;
+      background-color: lightgray;
+      color: black;
+      margin: 0.9375rem;
+      line-height: 2rem;
+      padding: 1.875rem 1.25rem;
+      font-weight: bold;
+     }
+      .ilw-statistic {
+        font-size: 1.125rem;      
+     }
+
+     .stat{
+      font-size: 2.125rem;
+     }
+
+       .source{
+      font-size: 1rem;
+      font-style: italic;
+     }
+     @media only screen and (min-width: 50rem) {
+         .ilw-statisic {
+          font-size: 2rem;
+         }
+       }
+
+
+
   `;

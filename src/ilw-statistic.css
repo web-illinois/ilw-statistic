@@ -1,47 +1,141 @@
   :root {
-    --il-stat-background: none;
-    --il-stat-color: inherit;
-    --il-stat-em-color: inherit;
-  }
+      --ilw-stat--blue-gradient: linear-gradient(180deg,
+          var(--il-industrial) 20%,
+          var(--il-blue) 100%);
+    
+    --ilw-statistic-background: white;
+    --ilw-statistic-color: var(--il-blue);
+    --ilw-statistic-margin: 0.9375rem;
+    --ilw-statistic-font-size: 1.25rem;
+    --ilw-statistic-line-height: 1.5rem;
+    --ilw-statistic-padding: 1.875rem 1.25rem;
+    --ilw-statistic-width: auto;
+    --ilw-statistic--stat-color: var(--il-blue);
+    --ilw-statistic--stat-font-size: 4rem;
+    --ilw-statistic--stat-line-height: 1.875rem;
+    --ilw-statistic--stat-padding: .8rem 0 1.75rem 0;
+    --ilw-statistic--source-font-size: 1.0625rem;
+    --ilw-statistic--source-line-height: 1.4375rem;
+    --ilw-statistic--heading-margin: 0;
+    --ilw-statistic--source-margin: 1rem 0 0 0;
+    --ilw-statistic--intro-padding-bottom: .5rem;
+}
 
-  il-stat {
+  ilw-statistic{
     display: block;
+    background: var(--ilw-statistic-background);
+    margin: var(--ilw-statistic-margin);
+    padding: var(--ilw-statistic-padding);
     text-align: center;
+    line-height: var(--ilw-statistic-line-height);
+    color: var(--ilw-statistic-color);
+    font-family: var(--il-font-sans);
     font-weight: 400;
-    line-height: 1.35;
-    padding: 2rem 0;
+    font-size: var(--ilw-statistic-font-size);
   }
-  il-stat em {
+  ilw-statistic *[slot=stat] {
     position: relative;
-    all: initial;
     display: inline-block;
-    margin: 0 .1em;
-    font-style: normal;
-    font-size: 2em;
-    line-height: .85;
-    letter-spacing: 2px;
-    font-weight: 800;
-    font-family: var(--il-font-montserrat);
+    margin: 0;
+    padding: var(--ilw-statistic--stat-padding);
+    font-size: var(--ilw-statistic--stat-font-size);
+    line-height: var(--ilw-statistic-line-height);
+    font-weight: 700;
     text-align: center;
-    color: var(--il-stat-em-color);
+    color: var(--ilw-statistic--stat-color);
     vertical-align: middle;
   }
-  il-stat.il-blue em {
-    background-color: var(--il-blue);
-    color: white;
-    --il-stat-em-color: var(--il-orange);
+
+    ilw-statistic *[slot=top] {
+      position: relative;
+      display: inline-block;
+      padding-bottom: var(--ilw-statistic--intro-padding-bottom);
+      margin: var(--ilw-statistic--heading-margin);
+    }
+
+  ilw-statistic *[slot=source] {
+    position: relative;
+    display: inline-block;
+    margin: var(--ilw-statistic--source-margin);
+    padding: var(--ilw-statistic--source-padding);
+    font-style: italic;
+    font-size: var(--ilw-statistic--source-font-size);
+    line-height: var(--ilw-statistic--source-line-height);
+    font-weight: 400;
+    color: var(--ilw-statistic--source-color);
+    text-align: center;
+    vertical-align: middle;
   }
 
+    ilw-statistic {
+      &[theme="blue"] {
+          --ilw-statistic-background: var(--il-blue);
+          --ilw-statistic-color: white;
+          --ilw-statistic--stat-color: white;
+      }
 
-  il-featured-section.il-orange il-stat em {
-    --il-stat-em-color: white;
+      &[theme="blue-gradient"] {
+        --ilw-statistic-background: var(--ilw-stat--blue-gradient);
+        --ilw-statistic-color: white;
+        --ilw-statistic--stat-color: white;
+      }
+  
+      &[theme="gray"] {
+        --ilw-statistic-background: var(--il-storm-lighter-4);        
+      }
+
+      &[theme="white"] {
+        --ilw-statistic-background:white;
+        --ilw-statistic--stat-color: var(--il-orange);
+    }
   }
+
+    ilw-statistic {
+      &[size="small"] {
+        --ilw-statistic-font-size: 1.125rem;
+        --ilw-statistic-line-height: 1.188rem;
+        --ilw-statistic--stat-font-size: 3rem;
+        --ilw-statistic--stat-padding: 1.5rem 0 1.8rem 0;
+        --ilw-statistic--source-font-size: 1rem;
+        --ilw-statistic--source-line-height: 1.25rem;
+        --ilw-statistic--source-margin: .75rem 0 0 0;
+        --ilw-statistic--intro-padding-bottom: 0;
+      }
+
+
+      &[size="large"] {
+          --ilw-statistic-font-size: 1.375rem;
+          --ilw-statistic-line-height: 1.625rem;
+          --ilw-statistic--stat-font-size: 5.875rem;
+          --ilw-statistic--stat-padding: 1.5rem 0 2.5rem 0;
+          --ilw-statistic--source-font-size: 1.125rem;
+          --ilw-statistic--source-line-height: 2rem;
+          --ilw-statistic--source-margin: 1rem 0 0 0;
+          --ilw-statistic--intro-padding-bottom: .75rem;
+
+      }
+
+      &[size="x-large"] {
+          --ilw-statistic-font-size: 1.5rem;
+          --ilw-statistic-line-height: 1.75rem;
+          --ilw-statistic--stat-font-size: 8.25rem;
+          --ilw-statistic--stat-padding: 2rem 0 3.5rem 0;
+          --ilw-statistic--source-font-size: 1.1875rem;
+          --ilw-statistic--heading-margin: 0 0 0.3125rem 0;
+          --ilw-statistic--source-margin: 1.5rem 0 0 0;
+          --ilw-statistic--intro-padding-bottom: 1rem;
+
+      }
+    }
+
+
 
 @media only screen and (max-width: 50rem) {
-    il-stat em {
+    ilw-statistic *[slot=stat] {
       margin: .25em 0;
       display: block;
       font-size: 2.75em;
+      text-align: center;
     }
   }
 

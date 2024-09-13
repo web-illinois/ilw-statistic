@@ -23,8 +23,11 @@ class Statistic extends LitElement {
 
     render() {
         return html`
-      <div>
-          <slot></slot>
+      <div class=ilw-statistic">
+          <span class="top"></span><slot name="top"></slot></span><br>
+          <span class="stat"> <slot name="stat"></slot></span><br>
+          <span class="text"> <slot></slot></span><br>
+          <span class="source"> <slot name="source"></slot></span>
       </div>
     `;
     }

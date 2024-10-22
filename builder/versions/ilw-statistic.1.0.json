@@ -1,0 +1,60 @@
+{
+    "title": "Statistic",
+    "tag": "ilw-statistic",
+    "github": "https://github.com/web-illinois/ilw-statistic/",
+    "type": "web component",
+    "element-name": "ilw-statistic",
+    "description": "Display a statistic nicely.",
+    "builder-version": "1.0",
+    "version": "1.0.0",
+    "date": "10/22/2024",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-statistic/1.0.0/ilw-statistic.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-statistic/1.0.0/ilw-statistic.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "",
+    "samples": [
+         {
+            "name": "default",
+            "description": "Full statistic",
+            "text": "<span slot=\"top\">Nation's</span>\n<span slot=\"stat\">Top Six</span> Overall ranking among undergraduate programs in the U.S.\n<span slot=\"source\">U.S. News and World 2022</span>"
+        },
+        {
+            "name": "no heading or source",
+            "description": "No heading or source",
+            "text": " <span slot=\"stat\">#9</span> overall ranking among online master's degrees in baking"
+        }
+    ],
+    "attributes-fixed": [],
+    "attributes-text": [],
+    "attributes": [
+        {
+            "name": "theme",
+            "description": "Color theme used",
+            "depreciated": false,
+            "values": [
+                "",
+                "gray",
+                "white",
+                "blue",
+                "blue-gradient"
+            ]
+        },
+        {
+            "name": "size",
+            "description": "proportional sized used",
+            "depreciated": false,
+            "values": [
+                "",
+                "small",
+                "medium",
+                "large",
+                "x-large"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+    ]
+}

@@ -7,5 +7,5 @@
     "description": "Display a statistic nicely.",
     "toolkit-version": "1.0",
     "production-version": "1.0",
-    "development-version": "1.0-beta"
+    "development-version": "latest"
 }

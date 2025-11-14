@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Statistic Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
-    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/latest/ilw-global.css">
     <script type="module" src="/src/ilw-statistic.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          const params = new URLSearchParams(window.location.search);
+          document.querySelectorAll("ilw-statistic").forEach(component => {
+            params.forEach((value, key) => {
+                component.setAttribute(key, value);
+            });
+          });
+        });
+    </script>
 </head>
 
 <body style="margin: 0; padding: 0;">
-<ilw-statistic size="small" theme="gray">
+<ilw-statistic>
   <span slot="top">Nation's</span>
   <span slot="stat">Top Six</span> Overall ranking among undergraduate programs in the U.S.
-  <span slot="source">U.S. News and World 2022</span>
+  <span slot="source"><a href="https://example.com/">U.S. News and World 2022</a></span>
 </ilw-statistic>
 </body>
 
-</html> -->
+</html>

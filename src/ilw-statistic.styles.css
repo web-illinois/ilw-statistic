@@ -1,0 +1,7 @@
+.stat {
+  color: var(--ilw-statistic--stat-color);
+}
+
+.source {
+  font-style: italic;
+}

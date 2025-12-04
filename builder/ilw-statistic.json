@@ -5,7 +5,8 @@
     "type": "web component",
     "element-name": "ilw-statistic",
     "description": "Display a statistic nicely.",
-    "toolkit-version": "1.0",
+    "purpose": "Create a statistic.",
+    "toolkit-version": "1.1",
     "production-version": "1.1",
     "development-version": "latest"
 }

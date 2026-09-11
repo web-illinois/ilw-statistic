@@ -1,12 +1,21 @@
 {
-    "title": "Statistic",
-    "tag": "ilw-statistic",
-    "github": "https://github.com/web-illinois/ilw-statistic/",
-    "type": "web component",
-    "element-name": "ilw-statistic",
-    "description": "Display a statistic nicely.",
-    "purpose": "Create a statistic.",
-    "toolkit-version": "1.1",
-    "production-version": "1.1",
-    "development-version": "latest"
+  "title": "Statistic",
+  "id": "ilw-statistic",
+  "type": "Web Component",
+  "repository-name": "ilw-statistic",
+  "description": "Call attention to an important number or data point with a prominent value, label, and supporting context.",
+  "purpose": "Create a statistic.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.1"
+    }
+  ]
 }
